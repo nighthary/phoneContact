@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btn_contact_detial_num"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@null"
+        android:drawableTop="@drawable/btn_selector"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp" />
+
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_marginTop="6dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:background="@color/window_bg"
+        />
+    <ImageButton
+        android:id="@+id/imagebtn_contact_detial_sms"
+        android:contentDescription="@android:attr/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="@null"
+        android:layout_marginTop="10dp"
+        android:drawableTop="@drawable/btn_selector"
+        android:src="@drawable/msg_icon" />
+
+</LinearLayout>

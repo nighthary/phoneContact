@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/background_color" >
+
+    <ImageView
+        android:id="@+id/choosetitle"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:contentDescription="@android:string/ok"
+        android:scaleType="matrix"
+        android:src="@drawable/tab_bar" />
+
+    <TextView
+        android:id="@+id/choosePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="@string/choose_photo_title"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <ImageButton
+        android:contentDescription="@android:attr/button"
+        android:id="@+id/imagebtn_camera"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/choosetitle"
+        android:background="@drawable/btn_selector" />
+
+    <TextView
+        android:id="@+id/take_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choosetitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="拍       照"
+        android:textColor="@color/button_unselected"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/imagebtn_camera"
+        android:background="@color/title_bg" >
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imagebtn_glary"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imagebtn_camera"
+        android:background="@drawable/btn_selector" />
+
+    <TextView
+        android:id="@+id/choose_glary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagebtn_camera"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="从图库选择"
+        android:textColor="@color/button_unselected"
+        android:textSize="22sp" />
+
+</RelativeLayout>

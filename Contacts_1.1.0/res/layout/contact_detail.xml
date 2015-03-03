@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/topbar_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip" >
+
+        <Button
+            android:id="@+id/btn_contact_back"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:drawableTop="@drawable/back_selector"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/btn_group_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/contact_detail"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_editContact"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:drawableTop="@drawable/btn_contact_edit" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:background="@drawable/bg_weather_rainy"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_contact_photo"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@android:string/ok"
+            android:src="@drawable/default_contact_photo" />
+
+        <TextView
+            android:id="@+id/tv_contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/addcontact_phone"
+            android:textColor="#6495ED"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="10dp"
+            android:background="#6495ED" >
+        </LinearLayout>
+
+        <!-- 电话-1 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/contact_num_btn_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_weight="4"
+                android:paddingLeft="-95dp"
+                android:drawableTop="@drawable/phone_btn_selector"
+                android:background="@null"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.02"
+                android:background="#6495ED" />
+
+            <Button
+                android:id="@+id/tv_conatct_sms_1"
+                style="@android:style/ButtonBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/detial_btn_selector"
+                android:gravity="bottom" />
+        </LinearLayout>
+        
+       <!-- 电话-2 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/contact_num_btn_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="3dp"
+                android:layout_weight="4"
+                 android:paddingLeft="-95dp"
+                android:background="@null"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.02"
+                android:layout_width="0dp"
+                android:background="#6495ED" />
+
+            <Button
+                android:id="@+id/tv_conatct_sms_2"
+                style="@android:style/ButtonBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/detial_btn_selector"
+                android:gravity="bottom" />
+        </LinearLayout>
+        
+        <!-- 电话-3 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/contact_num_btn_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="3dp"
+                android:layout_weight="4"
+                 android:paddingLeft="-95dp"
+                android:background="@null"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.02"
+                android:layout_width="0dp"
+                android:background="#6495ED" />
+
+            <Button
+                android:id="@+id/tv_conatct_sms_3"
+                style="@android:style/ButtonBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/detial_btn_selector"
+                android:gravity="bottom" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/addcontact_else"
+            android:textColor="#6495ED"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="10dp"
+            android:background="#6495ED" >
+        </LinearLayout>
+        <!-- 分组 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_group"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/addcontact_group"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_contact_group"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/tv_group"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.01dp"
+            android:layout_marginTop="5dp"
+            android:background="#EAEAEA" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
