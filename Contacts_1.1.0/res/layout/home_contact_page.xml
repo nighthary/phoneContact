@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/acbuwa_page"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/acbuwa_topbar"
+        style="@style/topbar_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="42.0dip" >
+
+        <Button
+            android:id="@+id/topbar_title"
+            style="@style/topbar_text"
+            android:layout_marginLeft="115dp"
+            android:background="@null"
+            android:text="@string/tab_contact" />
+
+        <ImageView
+            android:id="@+id/topbar_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/topbar_title"
+            android:contentDescription="?android:attr/action"
+            android:src="@drawable/btn_group_normal" />
+
+        <Button
+            android:id="@+id/btn_add_contact"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_addcontact" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.night.contact.contact.ClearEditText
+            android:id="@+id/pb_search_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/search_bar_edit_selector"
+            android:drawableLeft="@drawable/search_bar_icon_normal"
+            android:hint="请输入关键字"
+            android:singleLine="true"
+            android:textSize="15.0dip" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ProgressBar
+            android:id="@+id/process_init_data"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="120dp"
+            android:visibility="gone" />
+		<TextView
+            android:id="@+id/tv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/tv_loading"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="135dp"
+            android:visibility="gone" />
+        <ListView
+            android:id="@+id/pb_listvew"
+            android:layout_width="295dp"
+            android:layout_height="430dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:divider="@color/window_bg"
+            android:dividerHeight="1dp"
+            android:scrollbars="none" />
+
+        <com.night.contact.ui.AlphabetScrollBar
+            android:id="@+id/fast_scroller"
+            android:layout_width="22dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|right|center"
+            android:layout_marginTop="0dip"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/dic_background" />
+
+        <TextView
+            android:id="@+id/fast_position"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_margin="34dip"
+            android:background="@drawable/sort_icon_bg_click"
+            android:gravity="center"
+            android:padding="2dip"
+            android:textColor="#404040"
+            android:textSize="48sp"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</LinearLayout>
